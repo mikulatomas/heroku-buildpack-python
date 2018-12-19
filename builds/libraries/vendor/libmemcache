@@ -13,11 +13,11 @@ set -o pipefail
 # fail harder
 set -eux
 
-DEFAULT_VERSION="1.0.18"
+DEFAULT_VERSION="1.0.19"
 dep_version=${VERSION:-$DEFAULT_VERSION}
-dep_dirname=libmemcached-${dep_version}
+dep_dirname=${dep_version}
 dep_archive_name=${dep_dirname}.tar.gz
-dep_url=https://launchpad.net/libmemcached/1.0/${dep_version}/+download/${dep_archive_name}
+dep_url=https://github.com/memcachier/libmemcached/archive/${dep_archive_name}
 
 # SASL Support.
 echo "-----> Building cyrus-sasl 2.1.26…"
