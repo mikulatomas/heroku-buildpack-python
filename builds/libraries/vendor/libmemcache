@@ -14,7 +14,7 @@ set -o pipefail
 set -eux
 
 DEFAULT_VERSION="1.0.19"
-dep_version=${VERSION:-$DEFAULT_VERSION}
+dep_version="1.0.19"
 dep_dirname=${dep_version}
 dep_archive_name=${dep_dirname}.tar.gz
 dep_url=https://github.com/memcachier/libmemcached/archive/${dep_archive_name}
